@@ -1,0 +1,20 @@
+{
+    "_id" : ObjectId("5e39d68051961c8b13e59626"),
+    "codigo" : "123",
+    "nombre" : "123",
+    "marca" : "123",
+    "unidades" : 123,
+    "precioUnitario" : 6.5,
+    "descripcion" : "123"
+}
+
+
+CREATE TABLE cesta (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+usario VARCHAR(30) NOT NULL,
+producto VARCHAR(30) NOT NULL,
+marca VARCHAR(50),
+pre_uni double,
+unidades INT(6),
+prec_tot double
+) 

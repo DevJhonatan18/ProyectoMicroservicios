@@ -13,6 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Producto {
 	
 	@Id 
+	private String _id;
 	private String codigo;
 	private String nombre;
 	private String marca;
@@ -22,14 +23,25 @@ public class Producto {
 	
 	public Producto() {}
 
-	public Producto(String codigo, String nombre, String marca, Integer unidades, Double precioUnitario, String descripcion) {
+	public Producto(String _id,String codigo, String nombre, String marca, Integer unidades, Double precioUnitario, String descripcion) {
 		super();
+		this._id = _id;
 		this.codigo = codigo;
 		this.nombre = nombre;
 		this.marca = marca;
 		this.unidades = unidades;
 		this.precioUnitario = precioUnitario;
 		this.descripcion = descripcion;
+	}
+	
+	
+
+	public String get_id() {
+		return _id;
+	}
+
+	public void set_id(String _id) {
+		this._id = _id;
 	}
 
 	public String getCodigo() {

@@ -84,7 +84,7 @@ public class ProductoController
 	@PostMapping("/producto")
 	public Producto addEmployee(@RequestBody Producto newProducto)
 	{
-		Producto prod = new Producto(newProducto.getCodigo(), newProducto.getNombre(), newProducto.getMarca(), newProducto.getUnidades(), newProducto.getPrecioUnitario(), newProducto.getDescripcion());
+		Producto prod = new Producto(newProducto.get_id(),newProducto.getCodigo(), newProducto.getNombre(), newProducto.getMarca(), newProducto.getUnidades(), newProducto.getPrecioUnitario(), newProducto.getDescripcion());
 		productoRepository.insert(prod);
 		return prod;
 	}
