@@ -1,0 +1,20 @@
+#HTTP Server
+server:
+ port: ${PORT:0}
+# port: 1111
+
+#Discovery Server Access
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    
+  instance:
+    instance-id: ${random.value}
+    
+    
+    status-page-url-path: /infoCatalogo
+    health-check-url-path: /healthCatalogo
+    metadata-map:
+       app-owner: cedser
+       description: test application for the expert course

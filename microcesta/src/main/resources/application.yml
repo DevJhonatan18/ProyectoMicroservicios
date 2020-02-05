@@ -10,9 +10,9 @@ server:
   
 spring:
   datasource:
-    url: jdbc:mysql://172.17.0.5:3306/carritomicro?useSSL=false
+    url: jdbc:mysql://localhost:3306/Carritomicro?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password: root
+    password: cjavaperu
   jpa:
     generate-ddl: true
     
